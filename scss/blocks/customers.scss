@@ -1,0 +1,98 @@
+.customers {
+  &__wrapper {
+    margin: 0 40px;
+  }
+
+  &__shell {
+    @include flex(flex, false, space-between, row);
+    margin-bottom: 44px;
+  }
+
+  &__title {
+    @include fonts(22px, 22px, 600);
+    letter-spacing: -0.22px;
+    color: $color-sidebar-black;
+    margin: 30px 0 7px;
+  }
+
+  &__subtitle {
+    @include fonts(14px, 14px, 400);
+    letter-spacing: -0.14px;
+    color: $color-product-green-text;
+  }
+
+  &__search {
+    margin-top: 38px;
+
+    &-form {
+      position: relative;
+    }
+
+    &-img {
+      position: absolute;
+      @include sizes(24px, 24px);
+      margin: 8px 7px;
+    }
+
+    &-input {
+      @include sizes(216px, 38px);
+      border-radius: 10px;
+      background-color: $color-button-search;
+      color: $color-product-gray;
+      padding-left: 38px;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-input::placeholder {
+      @include fonts(12px, 12px, 400);
+      color: $color-product-gray;
+    }
+  }
+
+  &__container {
+    @include flex(flex, false, space-between, row);
+  }
+
+  &__menu {
+    color: $color-product-gray;
+    margin-bottom: 14px;
+  }
+
+  &__names,
+  &__companies,
+  &__numbers,
+  &__accounts,
+  &__countries {
+    @include flex(flex, flex-start, false, column);
+    color: $color-product-black;
+  }
+
+  &__name,
+  &__company,
+  &__number,
+  &__email,
+  &__country {
+    margin: 24px 0;
+  }
+
+  &__line {
+    width: 150px;
+    height: 1px;
+    background-color: $color-pagination-borders-gray;
+  }
+
+  &__line-email {
+    width: 175px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0 41px 0;
+  }
+
+  &__data {
+    color: $color-product-gray;
+  }
+}

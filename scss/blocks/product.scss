@@ -1,0 +1,14 @@
+.product {
+  &__header {
+    @include fonts(24px, 24px, 500);
+    color: $color-sidebar-black;
+    margin-bottom: 51px;
+    padding-top: 36px;
+  }
+
+  &__customers {
+    background-color: $color-main-white;
+    border-radius: 25px;
+    width: max-content;
+  }
+}

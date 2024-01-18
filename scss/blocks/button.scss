@@ -1,0 +1,26 @@
+.button {
+  @include flex(flex, center, center, column);
+  text-align: center;
+
+  &__red {
+    @include fonts(14px, 21px, 500);
+    font-family: 'Poppins', sans-serif;
+    @include sizes(80px, 29px);
+    border-radius: 4px;
+    border: 1px solid $color-button-borders-red;
+    background-color: $color-button-bg-red;
+    color: $color-button-borders-red;
+    margin: 20px 0;
+  }
+
+  &__green {
+    @include fonts(14px, 21px, 500);
+    font-family: 'Poppins', sans-serif;;
+    @include sizes(80px, 29px);
+    border-radius: 4px;
+    border: 1px solid $color-button-borders-green;
+    background-color:rgba(22, 192, 152, 0.38);
+    color: $color-button-borders-green;
+    margin: 20px 0;
+  }
+}

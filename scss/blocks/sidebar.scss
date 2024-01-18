@@ -1,0 +1,103 @@
+.sidebar {
+  background-color: $color-main-white;
+  color: $color-sidebar-light-gray;
+  @include fonts(14px, 21px, 500);
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  width: max-content;
+  height: 1200px;
+
+  &__header {
+    display: inline-flex;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    padding-top: 36px;
+
+    &-image {
+      @include sizes(37px, 37px);
+      margin-right: 8px;
+    }
+
+    &-title {
+      color: $color-sidebar-black;
+      @include fonts(26px, 39px, 600);
+    }
+
+    &-version {
+      @include fonts(10px, 21px, 500);
+      color: #838383;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__list {
+    flex: 1;
+  }
+
+  &__img {
+    @include sizes(24px, 24px);
+    justify-content: center;
+    margin-right: 14px;
+  }
+
+  &__item {
+    max-width: 230px;
+    display: flex;
+    @include fonts(14px, 21px, 500);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__active {
+    background-color: $color-purple;
+    @include sizes(250px, 46px);
+    color: $color-main-white;
+    border-radius: 8px;
+    box-sizing: content-box;
+    padding-right: 11px;
+  }
+
+  &__box {
+    @include flex(flex, center, center, false);
+    align-items: center;
+  }
+
+  &__box-active {
+    margin-left: 10px;
+  }
+
+  &__name {
+    text-align: center;
+  }
+
+  &__arrow {
+    @include sizes(16px, 16px);
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 76px;
+
+    @include tablet{
+      padding-bottom: 50px;
+    }
+
+    &-img {
+      @include sizes(42px, 42px);
+      margin-right: 12px;
+    }
+
+    &-name {
+      color: $color-sidebar-black;
+    }
+
+    &-position {
+      @include fonts(12px, 12px, 400);
+      color: $color-sidebar-dark-gray;
+    }
+  }
+}
